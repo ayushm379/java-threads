@@ -38,3 +38,9 @@ It is implemented with the Unsafe class for native hardware instructions.
   - PriorityBlockingQueue
   - DelayQueue
 - ConcurrentSkipListMap
+
+### Thread Locale
+This is a thread level variable, each thread has its own copy of this variable.
+Always use remove() at the end to prevent memory leak.
+This also works with Virtual threads.
+Each thread has a ThreadLocalMap, the thread locale variable is stored inside it.
